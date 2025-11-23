@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+</head>
+<style>
+    div p{
+        color: aqua;
+        background-color: black;
+    }
+    .text> p{
+        background-color: brown;
+    }
+    .text +p{
+        font-size: medium;
+        background-color: rgb(30, 179, 119);
+    }
+    /*psuedo*/
+    a:hover{
+        color: rgb(198, 43, 226);
+    }
+    a:visited{
+        color: rgba(0, 145, 255, 0.674);
+    }
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    ul li{
+        margin: 10px;
+        border-right: 1px solid;
+        padding-right: 20px;
+    }
+    ul li:first-child{
+        border-right: 0px;
+    }
+    ul::first-letter{
+        font-size: 25px;
+        color:chartreuse;
+    }
+    .para::after{
+        content:"read more" ;
+        color: cornflowerblue;
+        font: size 30px;;
+    }
+
+</style>
+<body>
+    <div class="text">
+        <h1>hello abes</h1>
+        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+         Ipsam rerum natus neque, eius delectus exercitationem debitis odit itaque animi culpa sit quisquam?
+          Dicta veniam provident harum soluta maiores ab excepturi!
+        </P>
+    </div>
+  <!--third para-->
+  <a href=""
+     <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Magni id beatae numquam unde quibusdam error ut minus ullam odit maiores 
+        cupiditate corrupti expedita, distinctio non adipisci! Consectetur ut incidunt a.
+
+    </p>
+  <div>
+     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Itaque culpa cupiditate quidem quisquam similique odit ipsum libero nam,
+     officia voluptatum illo,
+     fuga, adipisci assumenda accusamus voluptatem corporis quia amet obcaecati?
+     </div>
+   </p>
+
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     In ex natus officiis explicabo cupiditate placeat rerum earum quis reiciendis 
+     suscipit fugiat quae rem molestiae eum voluptate,
+     doloremque necessitatibus quas impedit?
+   </p>
+   <ul>
+    <li>home</li>
+    <li>contact</li>
+    <li>mobile</li>
+    <li>about</li>
+   </ul>
+</body>
+</html>
