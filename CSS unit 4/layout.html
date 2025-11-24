@@ -36,7 +36,8 @@
         }
         #left{
             height: 450px;
-            flex-grow: 1;background-color: brown; 
+            flex-grow: 1;background-color: brown;
+            text-align: center; 
         }
         #center{
             height: 450px;
@@ -45,6 +46,7 @@
         #right{
             height: 450px;
             flex-grow: 1;background-color: brown;
+            text-align: center;
         }
         #hdr_top{
             display: flex;
@@ -60,6 +62,23 @@
         #hdr_top_rgt{
             flex-grow: 2;background-color: antiquewhite;
         }
+        #center{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            background-color: cornflowerblue;
+            align-items: center;
+        }
+        #center_top{
+            height: 200px;width: 200px;
+            flex-grow: 1; background-color: hotpink;
+            text-align: center;
+        }
+        #center_middle{
+            height: 200px; width: 200px;
+            flex-grow: 2;background-color: hotpink;
+            align-items: center;
+        }
 
     </style>
 </head>
@@ -74,7 +93,11 @@
         </div>
         <div id="container">
             <div id="left">Left</div>
-            <div id="center">Center</div>
+            <div id="center">
+                <div id="center_top">Center left block</div>
+                <div id="center_middle">Center right block</div>
+                <div id="center_bottom"></div>
+            </div>
             <div id="right">Right</div>
         </div>
         <div id="ftr">
