@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layouts</title>
+    <style>
+         body{
+             margin: 0px;
+             padding: 0;
+        }
+        html*{
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        main{
+            width: 1200px;
+            height:800px ;
+            background-color: cadetblue;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+                
+        #hdr,#container,#ftr{
+            background-color: burlywood;
+            height: 150px;
+        }
+        #container{
+            height: 400px;
+            display: flex;
+            gap: 5px;
+            flex-direction:row;
+        }
+        #left{
+            height: 450px;
+            flex-grow: 1;background-color: brown; 
+        }
+        #center{
+            height: 450px;
+            flex-grow: 2;background-color: brown;
+        }
+        #right{
+            height: 450px;
+            flex-grow: 1;background-color: brown;
+        }
+        #hdr_top{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+            text-align: center;
+            line-height: 150px;
+        }
+        #hdr_top_left{
+            flex-grow: 1;background-color: aqua;
+        }
+        #hdr_top_rgt{
+            flex-grow: 2;background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="hdr_top">
+            <div id="hdr_top_left">header logo</div>
+            <div id="hdr_top_rgt">header banner</div>
+        </div>
+        <div id="hdr">
+            <h2>header bar</h2>
+        </div>
+        <div id="container">
+            <div id="left">Left</div>
+            <div id="center">Center</div>
+            <div id="right">Right</div>
+        </div>
+        <div id="ftr">
+            <h2>footer bar</h2>
+        </div>
+    </main>
+    
+</body>
+</html>
